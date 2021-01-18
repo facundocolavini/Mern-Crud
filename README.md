@@ -1,12 +1,12 @@
 # Mern-Crud
 
 # Project Start
-  npm start
-  
+    npm start
+    
 # Compiles and hot-reloads for development
-   npm run dev
+    npm run dev
   
-   mongod 
+    mongod 
    
-   npm run webpack 
+    npm run webpack 
    
