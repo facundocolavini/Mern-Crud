@@ -10,3 +10,4 @@
    
     npm run webpack 
    
+    localhost:3000
