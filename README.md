@@ -4,20 +4,25 @@
 # Pre-requisitos 📋
 ###### Instalar en la carpeta del proyecto:
       
+      Nodejs 
       MongoDB de manera local
       Express
       React (react/react-dom)
       Webpack 
       Babel (core)
-      
-   
+       
 # Instalación 🔧
    ###### Modulos y Presets:
+    > En mi caso instale algunos de los modulos con -D
     
-    npm install react react-dom
-    npm install express
-    npm i babel-core 
-    
+    npm i mongoose 
+    npm i morgan 
+    npm i react react-dom
+    npm i express
+    npm i babel-core preset-env react
+    npm i webpack 
+    npm i webpack cli
+
 # Construido con 🛠️
 
    Frameworks Utilizados [REACT](https://www.mongodb.com/) y [Materialize](https://materializecss.com/)
