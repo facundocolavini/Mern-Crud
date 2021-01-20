@@ -25,7 +25,7 @@
 
 # Construido con 🛠️
 
-   Frameworks Utilizados [REACT](https://www.mongodb.com/) y [Materialize](https://materializecss.com/)
+   Frameworks Utilizados [REACT](https://reactjs.org/) y [Materialize](https://materializecss.com/)
    
    Para crear mi Base de Datos [MongoDB](https://www.mongodb.com/) 
    
