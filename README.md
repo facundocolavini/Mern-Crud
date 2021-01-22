@@ -31,11 +31,11 @@
    
    Estructura de ejecucion [Node](https://nodejs.org/en/) y [Express](https://expressjs.com/) 
    
-# Compiles and hot-reloads for development
+# Ejecutar desde consola VSCODE
     
     npm start
     npm run dev
     mongod 
     npm run webpack 
-    localhost:3000
+    ir a localhost:3000
     
