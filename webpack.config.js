@@ -12,5 +12,11 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
+    },
+    externals:{
+        // global app config object
+        config: JSON.stringify({
+            apiUrl: '/api'
+        })
     }
 };

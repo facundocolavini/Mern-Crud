@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import{Grid} from '@material-ui/core';
 import Navbar from './components/Navbar';
- 
+
+
 class App extends Component{
     constructor (){
         super();

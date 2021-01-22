@@ -1,18 +1,23 @@
 const express= require('express');
 const morgan = require('morgan');
 const path = require('path');
-
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
 const {mongoose} = require ('./database')
 const app = express();
 
 
 //Settings 
-app.set('port',process.env.PORT || 3000);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(cookieParser());
 
 //Middlewares - Funciones que se ejecutan antes de que lleguen a nuestras rutas.npm install morgan.
 app.use(morgan('dev'));
 app.use(express.json());//confirma si el dato que va a nuestro servidor esta en formato JSON.
-
+// allow cors requests from any origin and with credentials
+app.use(cors({ origin: (origin, callback) => callback(null, true), credentials: true }));
 //Routes
 
 app.use('/api/tasks',require('./routes/task-routes'));
@@ -24,6 +29,7 @@ app.use(express.static(path.join(__dirname + '/public')))//static hace que muest
 
 //Starting the server
 
-app.listen(app.get('port'),()=>{
-    console.log(`Server on port ${app.get('port')}`);
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 3000;
+app.listen(port, () => {
+    console.log('Server listening on port ' + port);
 });

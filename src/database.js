@@ -6,8 +6,7 @@ const mongoose = require('mongoose');//Conecta la base de datos y define como se
     mongod
     mongo
 */
-mongoose.set('useUnifiedTopology', true); 
-
+mongoose.set('useUnifiedTopology', true);  
 const URI = 'mongodb://localhost/mern-aulas';
 mongoose.connect(URI,{ useNewUrlParser: true })
     .then(db=> console.log('DB is connected'))
