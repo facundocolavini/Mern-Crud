@@ -7,21 +7,18 @@
       Nodejs 
       MongoDB de manera local
       Express
-      React (react/react-dom)
-      Webpack 
-      Babel (core)
+      React (react/react-dom/useForm/useState/useEffect)
+
        
 # Instalación 🔧
    ###### Modulos y Presets:
-    > En mi caso instale algunos de los modulos con -D
     
     npm i mongoose 
     npm i morgan 
     npm i react react-dom
     npm i express
-    npm i babel-core preset-env react
-    npm i webpack 
-    npm i webpack cli
+    npm i react-hooks-form
+    npm i react-hooks-useform
 
 # Construido con 🛠️
 
@@ -33,9 +30,6 @@
    
 # Ejecutar desde consola VSCODE
     
-    npm start
-    npm run dev
+    npm run dev (desde la carpeta backend)
     mongod 
-    npm run webpack 
-    ir a localhost:3000
-    
+    npm start (desde la carpeta frontend)
